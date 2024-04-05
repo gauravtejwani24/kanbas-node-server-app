@@ -30,7 +30,7 @@ export default function CourseRoutes(app) {
   const getCourse = async (req, res) => {
     const { id } = req.params;
     const course = await dao.findCourseById(id);
-    console.log(course);
+ 
     if (!course) {
       res.status(404).send("Course not found");
       return;
