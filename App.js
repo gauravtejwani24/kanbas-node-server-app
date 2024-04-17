@@ -30,6 +30,7 @@ if (process.env.NODE_ENV !== "development") {
     sessionOptions.cookie = {
       sameSite: "none",
       secure: true,
+      domain: "kanbas-node-server-app-ut56.onrender.com"
     };
   }
   
